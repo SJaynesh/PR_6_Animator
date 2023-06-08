@@ -346,121 +346,130 @@ class _HomePageState extends State<HomePage>
                     scrollDirection: Axis.horizontal,
                     itemCount:
                         localJsonData_ProviderFalse.l1.PlanetsList.length,
-                    itemBuilder: (context, i) => Container(
-                      height: h * 0.3,
-                      width: w * 0.75,
-                      margin: EdgeInsets.only(left: 15),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.white54.withOpacity(0.4),
-                          ),
-                          BoxShadow(
-                            color: Color(0xff353467).withOpacity(0.7),
-                            spreadRadius: -5.0,
-                            blurRadius: 20.0,
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(15),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                AnimatedBuilder(
-                                  animation: animationController,
-                                  child: Image.asset(
-                                    localJsonData_ProviderTrue
-                                        .l1.PlanetsList[i].image,
-                                    height: h * 0.15,
-                                  ),
-                                  builder: (context, widget) =>
-                                      Transform.rotate(
-                                    angle: animationController.value,
-                                    child: widget,
-                                  ),
-                                ),
-                                RichText(
-                                  text: TextSpan(
-                                    children: [
-                                      TextSpan(
-                                        text: localJsonData_ProviderTrue
-                                            .l1.PlanetsList[i].name,
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: h * 0.03,
-                                            fontWeight: FontWeight.w500,
-                                            letterSpacing: 0.5,
-                                          ),
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text:
-                                            "\n${localJsonData_ProviderTrue.l1.PlanetsList[i].temperature}",
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            color: Color(0xff9383c7),
-                                            fontSize: h * 0.02,
-                                            fontWeight: FontWeight.bold,
-                                            letterSpacing: 0.5,
-                                          ),
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text:
-                                            "\n${localJsonData_ProviderTrue.l1.PlanetsList[i].velocity}",
-                                        style: GoogleFonts.poppins(
-                                          textStyle: TextStyle(
-                                            color: Color(0xff7277a1),
-                                            fontSize: h * 0.013,
-                                            fontWeight: FontWeight.w500,
-                                            letterSpacing: 0.5,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
+                    itemBuilder: (context, i) => GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushNamed("SecondPage",
+                            arguments:
+                                localJsonData_ProviderFalse.l1.PlanetsList[i]);
+                      },
+                      child: Container(
+                        height: h * 0.3,
+                        width: w * 0.75,
+                        margin: EdgeInsets.only(left: 15),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(40),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.white54.withOpacity(0.4),
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30, right: 30),
-                            child: Container(
-                              height: h * 0.1,
-                              width: w,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(35),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.white54.withOpacity(0.4),
+                            BoxShadow(
+                              color: Color(0xff353467).withOpacity(0.7),
+                              spreadRadius: -5.0,
+                              blurRadius: 20.0,
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(15),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  AnimatedBuilder(
+                                    animation: animationController,
+                                    child: Image.asset(
+                                      localJsonData_ProviderTrue
+                                          .l1.PlanetsList[i].image,
+                                      height: h * 0.15,
+                                    ),
+                                    builder: (context, widget) =>
+                                        Transform.rotate(
+                                      angle: animationController.value,
+                                      child: widget,
+                                    ),
                                   ),
-                                  BoxShadow(
-                                      color: Color(0xff6824a4),
-                                      spreadRadius: 0.0,
-                                      blurRadius: 20.0,
-                                      offset: Offset(6, 5)),
+                                  RichText(
+                                    text: TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: localJsonData_ProviderTrue
+                                              .l1.PlanetsList[i].name,
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: h * 0.03,
+                                              fontWeight: FontWeight.w500,
+                                              letterSpacing: 0.5,
+                                            ),
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              "\n${localJsonData_ProviderTrue.l1.PlanetsList[i].temperature}",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              color: Color(0xff9383c7),
+                                              fontSize: h * 0.02,
+                                              fontWeight: FontWeight.bold,
+                                              letterSpacing: 0.5,
+                                            ),
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              "\n${localJsonData_ProviderTrue.l1.PlanetsList[i].velocity}",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                              color: Color(0xff7277a1),
+                                              fontSize: h * 0.013,
+                                              fontWeight: FontWeight.w500,
+                                              letterSpacing: 0.5,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
-                              alignment: Alignment.center,
-                              child: Text(
-                                "Fly with star",
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                    color: Colors.white,
-                                    fontStyle: FontStyle.italic,
-                                    fontSize: h * 0.025,
-                                    fontWeight: FontWeight.w500,
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(left: 30, right: 30),
+                              child: Container(
+                                height: h * 0.1,
+                                width: w,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.white54.withOpacity(0.4),
+                                    ),
+                                    BoxShadow(
+                                        color: Color(0xff6824a4),
+                                        spreadRadius: 0.0,
+                                        blurRadius: 20.0,
+                                        offset: Offset(6, 5)),
+                                  ],
+                                ),
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "Fly with star",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontStyle: FontStyle.italic,
+                                      fontSize: h * 0.025,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -490,74 +499,76 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
               ),
-              ...List.generate(Friends.length, (i) => Card(
-                color: Color(0xff353467).withOpacity(0.7),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ListTile(
-                    leading: Container(
-                      height: h * 0.055,
-                      width: w * 0.14,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                          image:
-                          AssetImage(Friends[i]['image']),
-                          fit: BoxFit.cover,
+              ...List.generate(
+                Friends.length,
+                (i) => Card(
+                  color: Color(0xff353467).withOpacity(0.7),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListTile(
+                      leading: Container(
+                        height: h * 0.055,
+                        width: w * 0.14,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            image: AssetImage(Friends[i]['image']),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                    ),
-                    title: Text(
-                      Friends[i]['name'],
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: h * 0.017,
-                        letterSpacing: 1,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                    subtitle: Text(
-                      Friends[i]['name2'],
-                      style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: Colors.grey.shade500,
-                          fontSize: h * 0.014,
+                      title: Text(
+                        Friends[i]['name'],
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: h * 0.017,
                           letterSpacing: 1,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
-                    ),
-                    trailing: Container(
-                      height: h * 0.05,
-                      width: w * 0.27,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.white70,
-                          width: 2,
-                        ),
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.white54.withOpacity(0.4),
-                          ),
-                          BoxShadow(
-                            color: Color(0xff353467).withOpacity(0.7),
-                          ),
-                        ],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Follow",
+                      subtitle: Text(
+                        Friends[i]['name2'],
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey.shade500,
+                            fontSize: h * 0.014,
                             letterSpacing: 1,
+                          ),
+                        ),
+                      ),
+                      trailing: Container(
+                        height: h * 0.05,
+                        width: w * 0.27,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.white70,
+                            width: 2,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.white54.withOpacity(0.4),
+                            ),
+                            BoxShadow(
+                              color: Color(0xff353467).withOpacity(0.7),
+                            ),
+                          ],
+                        ),
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Follow",
+                          style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              letterSpacing: 1,
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
                 ),
-              ),),
+              ),
             ],
           ),
         ),
