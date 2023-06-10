@@ -41,11 +41,6 @@ class _SecondPageState extends State<SecondPage>
     animationController.dispose();
   }
 
-  @override
-  void deactivate() {
-    super.deactivate();
-    animationController.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

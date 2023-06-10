@@ -44,12 +44,6 @@ class _HomePageState extends State<HomePage>
     animationController.dispose();
   }
 
-  @override
-  void deactivate() {
-    super.deactivate();
-    animationController.dispose();
-  }
-
   LoadJsonData() async {
     await Provider.of<LocalJsonData_Provider>(context, listen: false)
         .LoadJsonData();

@@ -41,12 +41,6 @@ class _FavoritePageState extends State<FavoritePage>
   }
 
   @override
-  void deactivate() {
-    super.deactivate();
-    animationController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     Theme_Provider theme_providerTrue = Provider.of(context);
     Favorite_Provider favorite_providerTrue = Provider.of(context);
