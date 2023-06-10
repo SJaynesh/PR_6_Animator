@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import 'package:planets_app/Models/LocalJsonData_Model.dart';
 import 'package:planets_app/Models/Planets_Model.dart';
 import 'package:planets_app/Utills/Atributes.dart';
-import 'package:provider/provider.dart';
 
 class LocalJsonData_Provider extends ChangeNotifier {
   LocalJsonData_Model l1 = LocalJsonData_Model(data: "", PlanetsList: []);

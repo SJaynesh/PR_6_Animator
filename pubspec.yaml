@@ -38,6 +38,8 @@ dependencies:
   google_fonts:
   provider:
   salomon_bottom_bar: ^3.3.2
+  shared_preferences:
+  connectivity_plus:
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +72,15 @@ flutter:
     - assets/images/homepage/
     - assets/images/planets/
     - assets/json/planets.json
+    - assets/images/Sun/
+    - assets/images/Mercury/
+    - assets/images/Venus/
+    - assets/images/Earth/
+    - assets/images/Mars/
+    - assets/images/Jupiter/
+    - assets/images/Saturn/
+    - assets/images/Uranus/
+    - assets/images/Neptune/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

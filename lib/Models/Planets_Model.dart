@@ -1,5 +1,5 @@
-
 class Planets {
+  String no;
   String name;
   String diameter;
   String leanthOfYear;
@@ -12,8 +12,12 @@ class Planets {
   String distance;
   String description;
   String image;
+  String hero;
+  List<String> images;
+  bool favorite;
 
   Planets({
+    required this.no,
     required this.name,
     required this.diameter,
     required this.leanthOfYear,
@@ -26,9 +30,13 @@ class Planets {
     required this.distance,
     required this.description,
     required this.image,
+    required this.hero,
+    required this.images,
+    required this.favorite,
   });
 
   factory Planets.fromJson(Map<String, dynamic> json) => Planets(
+        no: json["no"],
         name: json["name"],
         diameter: json["diameter"],
         leanthOfYear: json["leanthOfYear"],
@@ -41,5 +49,8 @@ class Planets {
         distance: json["distance"],
         description: json["description"],
         image: json["image"],
+        hero: json["hero"],
+        images: List<String>.from(json["images"].map((x) => x)),
+        favorite: false,
       );
 }

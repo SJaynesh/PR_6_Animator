@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -18,7 +17,8 @@ class _SplachScreenState extends State<SplachScreen> {
     double w = s.width;
 
     Timer(Duration(seconds: 5), () {
-      Navigator.of(context).pushNamedAndRemoveUntil("HomePage", (route) => false);
+      Navigator.of(context)
+          .pushNamedAndRemoveUntil("FirstPage", (route) => false);
     });
 
     return SafeArea(
