@@ -108,12 +108,48 @@ https://github.com/SJaynesh/PR_6_Animator/assets/115562979/57242afe-b085-4e03-8e
 ### --: Photos :--
 
 <p>
-  <img align = "left"  src = ".png" width=22% height=35% >
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/8d1611db-c929-4cb8-ab76-949e150cae7d.png" width=22% height=35% >
   
-  <img align = "left"  src = ".png" width=22% height=35% >
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/1c649b2f-d9e3-4eb8-854b-ac7133e3ea26.png" width=22% height=35% >
  
-  <img align = "left"  src = ".png" width=22% height=35% >
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/9de3d61a-e7bf-4c4a-8239-31189be1e300.png" width=22% height=35% >
  
-  <img  src = ".png" width=22% height=35% >
+  <img  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/398dda77-15ff-4e47-a715-79a3f357c788.png" width=22% height=35% >
+</P>
+
+<p>
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/f2a73570-6a58-4f67-9774-17328301bd6f.png" width=22% height=35% >
+  
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/f4ac80fd-2cc3-444a-85ca-d2454ca1b06a.png" width=22% height=35% >
+ 
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/a75c57c4-645d-4899-b43a-cba2d1df6d2f.png" width=22% height=35% >
+ 
+  <img  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/6a0af638-6d83-4c28-a88e-f90f12444d8f.png" width=22% height=35% >
+</P>
+
+<p>
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/33ca5f13-d484-4daf-aab9-e608bb66eefd.png" width=22% height=35% >
+  
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/cb3a7e1a-3a7a-4628-84ed-358919d3ac13.png" width=22% height=35% >
+ 
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/0c0fcda4-f58c-465b-a14a-180adbc5bae9.png" width=22% height=35% >
+ 
+  <img  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/b090a98d-8dce-4771-b484-d1da18087a15.png" width=22% height=35% >
+</P>
+
+<p>
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/e3f3fb1d-1f08-48dd-9e6a-28a87963fff2.png" width=22% height=35% >
+  
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/08eb9410-58d0-4467-8443-6b7b58780184.png" width=22% height=35% >
+ 
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/f9559c89-7b4f-411d-a57d-8bb3fba91675.png" width=22% height=35% >
+ 
+  <img  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/5e44c9c0-2641-45a8-8dae-c075b3a455bf.png" width=22% height=35% >
+</P>
+
+<p>
+  <img align = "left"  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/a261327b-2228-43d7-89f7-5fa46a6f4bbb.png" width=22% height=35% >
+  
+  <img  src = "https://github.com/SJaynesh/PR_6_Animator/assets/115562979/7751c8fa-1d9a-43b2-a45c-2b6c68832078.png" width=22% height=35% >
 </P>
   
