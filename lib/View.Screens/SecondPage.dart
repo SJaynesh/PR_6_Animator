@@ -34,7 +34,11 @@ class _SecondPageState extends State<SecondPage>
 
     animationController.repeat();
   }
-
+  @override
+  dispose() {
+    animationController.dispose(); // you need this
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +49,10 @@ class _SecondPageState extends State<SecondPage>
     Theme_Provider theme_providerTrue = Provider.of(context);
    Favorite_Provider favorite_providerFalse =
         Provider.of(context, listen: false);
+
+    Favorite_Provider favorite_providerTrue =
+    Provider.of(context);
+
     return SafeArea(
       child: Scaffold(
         body: Hero(
@@ -147,7 +155,7 @@ class _SecondPageState extends State<SecondPage>
                                           favorite_providerFalse
                                               .addFavoriteValue(data);
                                         },
-                                        icon: (data.favorite)
+                                        icon: (favorite_providerTrue.f1.favorite)
                                             ? Icon(
                                                 Icons.favorite,
                                                 color: Colors.red,

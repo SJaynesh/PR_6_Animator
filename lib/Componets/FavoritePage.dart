@@ -35,11 +35,10 @@ class _FavoritePageState extends State<FavoritePage>
   }
 
   @override
-  void dispose() {
-    super.dispose();
+  dispose() {
     animationController.dispose();
+    super.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     Theme_Provider theme_providerTrue = Provider.of(context);
